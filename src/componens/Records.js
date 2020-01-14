@@ -5,6 +5,7 @@ import * as RecordsAPI from '../utils/RecordsAPI'
 import RecordForm from './RecordForm'
 import AmountBox from './AmountBox'
 
+// this component is parent component, included child components: Record, RecordForm, AmountBox
 export default class Records extends Component {
   constructor(props){
     super(props)
