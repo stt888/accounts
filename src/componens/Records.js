@@ -16,7 +16,7 @@ export default class Records extends Component {
       }
   }
 
-  // use axios request API data
+  // use axios API request data
     componentDidMount(){
         RecordsAPI.getAll()
           .then(
@@ -32,7 +32,7 @@ export default class Records extends Component {
 
           )
     }
-    // use jQuery request API data
+    // use jQuery API request data
     /*
       componentDidMount(){
         getJSON('https://5bef17c05b9d1a0013244587.mockapi.io/api/v1/records')
@@ -60,7 +60,7 @@ export default class Records extends Component {
       })
     }
 
-    // use redux to update one new record
+    // update one new record
     updateRecord=(record, data)=>{
         const recordIndex = this.state.records.indexOf(record)
         const newRecords = this.state.records.map((item, index)=>{
